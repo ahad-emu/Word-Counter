@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="float-right">
+  <a href="{% url 'index' %}">Back to homepage</a>
+</div>
+<div class="">
+  {% if wordlength > 1 %}
+    <h1>There are {{ wordlength }} words in your text</h1>
+  {% else %}
+    <h1>There are {{ wordlength }} word in your text</h1>
+  {% endif %}
+
+  <h1>Your Text : </h1>
+  {{ fulltext }}
+  <h1>Word Count :</h1>
+  {% for word, countvalue in wordDictionaries.items %}
+    {{word}} -> {{countvalue}} <br>
+  {% endfor %}
+</div>
+{% endblock %}
