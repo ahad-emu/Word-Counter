@@ -24,7 +24,7 @@ Static_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = '#gq8=7h(1me&t%gidh^3u$b3le*(=xn^5fmdxd0(bh&=lcye8g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["ahademu-wordcounter.herokuapp.com", "127.0.0.1"]
 
