@@ -11,11 +11,13 @@
     <h1>There are {{ wordlength }} word in your text</h1>
   {% endif %}
 
-  <h1>Your Text : </h1>
+  <h1 class="mt-3">Your Text : </h1>
   {{ fulltext }}
-  <h1>Word Count :</h1>
-  {% for word, countvalue in wordDictionaries.items %}
-    {{word}} -> {{countvalue}} <br>
-  {% endfor %}
+  <div class="jumbotron mt-3">
+    <h1 class="">Word Count :</h1>
+    {% for word, countvalue in wordDictionaries.items %}
+      {{word}} -> {{countvalue}} <br>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}
