@@ -11,7 +11,7 @@ def about(request):
 def wordcounter(request):
     fulltext = request.POST["fulltext"]
     fulltext = fulltext.strip()
-    textlist = re.split(', |_|-|!|@|#|$|%|"|&|.|*|;|:| |',fulltext)
+    textlist = re.split(', |_|-|!|@|#|$|%|"|&| |',fulltext)
     wordlength = len(textlist)
     new_text_list = []
     i = 0
